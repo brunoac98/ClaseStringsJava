@@ -9,7 +9,7 @@ public class PruebaCodifica {
 		String textoLow = ""; // String para guardar texto convertido a minusculas.
 		String textoCod = ""; // String para guardar texto codificado.
 		String textoDecod = ""; // String para guardar texto codificado.
-		int desp = 5; // Variable de cantidad de lugares a desplazar.
+		int desp = 2; // Variable de cantidad de lugares a desplazar.
 		int pos  = 0; // Variable para guardar posicion de la letra en el abecedario.
 		int cantLetras = 0;
 		
@@ -65,11 +65,13 @@ public class PruebaCodifica {
 
 			} else {
 			
-			
+				// Controlo si es menor a 0 para no salirme del array.
 				if((pos -  desp) < 0) 
 					{
-				
-						pos = (pos - cantLetras) * - 1 ;
+					
+						// Sumo 1 para que tome la letra correspondiente
+					    pos = (pos - desp + 1);
+					    pos = cantLetras  -  (pos * -1);
 				
 					} else {
 				
