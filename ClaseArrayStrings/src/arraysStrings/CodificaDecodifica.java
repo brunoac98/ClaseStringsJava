@@ -1,6 +1,6 @@
 package arraysStrings;
 
-public class PruebaCodifica {
+public class CodificaDecodifica {
 	public static void main(String[] args) throws Exception {
 		
 		String abcdario = "abcdefghijklmnñopqrstuvwxyz";
